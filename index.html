@@ -4,60 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLIMA</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    <link rel="stylesheet" href="./estilos.css">
 
-h1, h2 {
-    color: #FFFFF0;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #FFFFF0;
-}
-
-.card {
-    background-color: cadetblue;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 60px teal;
-    border: teal 0.4px solid;
-}
-
-.container {
-    text-align: center;
-    align-items: center;
-}
-
-#paisSelec{
-    height: 30px;
-    width: 315px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: none;
-}    
-
-input{
-    width: 311px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-}
-
-
-    </style>
 </head>
 <body>
     <div class="card">
         <div class="container">
             <h1 class="title">Buscador del clima</h1>
-            <div id="valor">
-                <h2>40°</h2>
+            <div class="resultado">
+                <p>Agregar ciudad y pais</p>
+                <h5>Clima en Bogota</h5>
+
+                <h2>40°C</h2>
+                <p>Max: 29°C</p>
+                <p>Min: 17°C</p>
             </div>
             <div id="pais">
                 <select name="" id="paisSelec">
@@ -74,7 +34,12 @@ input{
             <div id="ciudad">
                 <input type="text" autocomplete="off" placeholder="Buscar Ciudad...">
             </div>
+            <div>
+                <button id="btn">Buscar</button>
+            </div>
         </div>
     </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
