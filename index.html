@@ -5,37 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLIMA</title>
     <link rel="stylesheet" href="./estilos.css">
-
 </head>
 <body>
     <div class="card">
         <div class="container">
             <h1 class="title">Buscador del clima</h1>
             <div class="resultado">
-                <p>Agregar ciudad y pais</p>
-                <h5>Clima en Bogota</h5>
+                <p>Agregar ciudad y país</p>
+                <p id="ciudadMsj"></p>
+                <h1 id="temperatura"></h1>
+                <p id="temperatura-min"></p>
+                <p id="temperatura-max"></p>
+            </div>
 
-                <h2>40°C</h2>
-                <p>Max: 29°C</p>
-                <p>Min: 17°C</p>
-            </div>
-            <div id="pais">
-                <select name="" id="paisSelec">
-                    <option disabled selected value="">Seleccionar Pais</option>
-                    <option value="AR">Argentina</option>
-                    <option value="CO">Colombia</option>
-                    <option value="CR">Costa Rica</option>
-                    <option value="ES">España</option>
-                    <option value="US">Estados Unidos</option>
-                    <option value="MX">México</option>
-                    <option value="PE">Perú</option>
-                </select>
-            </div>
-            <div id="ciudad">
-                <input type="text" autocomplete="off" placeholder="Buscar Ciudad...">
-            </div>
-            <div>
-                <button id="btn">Buscar</button>
+            <div id="inputBnt">
+                
+                <div id="pais">
+                    <select id="paisSelec">
+                        <option disabled selected value="">Seleccionar País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="ES">España</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="MX">México</option>
+                        <option value="PE">Perú</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="ciudad" type="text" autocomplete="off" placeholder="Buscar Ciudad...">
+                </div>
+                <div>
+                    <button id="btn">Buscar</button>
+                </div>
+                
             </div>
         </div>
     </div>
